@@ -3,7 +3,7 @@ public class Contact implements Comparable {
 	private String name;
 	private String number;
 	private int numberOfOutgoingCalls;
-	
+
 	public Contact(String name, String number) {
 		super();
 		this.setName(name);
@@ -16,8 +16,8 @@ public class Contact implements Comparable {
 	}
 
 	public void setNumberOfOutgoingCalls(int numberOfOutgoingCalls) {
-		if(numberOfOutgoingCalls >= 0)
-		this.numberOfOutgoingCalls = numberOfOutgoingCalls;
+		if (numberOfOutgoingCalls >= 0)
+			this.numberOfOutgoingCalls = numberOfOutgoingCalls;
 	}
 
 	public String getName() {
@@ -25,7 +25,7 @@ public class Contact implements Comparable {
 	}
 
 	public void setName(String name) {
-		if(name != null)
+		if (name != null)
 			this.name = name;
 	}
 
@@ -39,8 +39,8 @@ public class Contact implements Comparable {
 
 	@Override
 	public int compareTo(Object arg0) {
-		
-		return this.name.compareTo(((Contact)arg0).getName());
+
+		return this.name.compareTo(((Contact) arg0).getName());
 	}
 
 }
